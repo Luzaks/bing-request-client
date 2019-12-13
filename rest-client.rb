@@ -5,9 +5,8 @@ require 'rest-client'
 
    bing_url = 'https://www.bing.com/search?q='
    response = RestClient.get(bing_url+search, headers={})   
-
-   puts response.headers
+   puts "Your headers are: #{response.headers}"
    puts "------------------------"
-   puts response.cookies
+   puts "Your cookies are: #{response.cookies}"
    puts "------------------------"
-   puts response.code
+   puts "Code response: #{response.code}"
